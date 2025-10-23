@@ -1,0 +1,26 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+ <html>
+ <body>
+ <div style="color:green;font-size:50px;">
+ <script language="JavaScript">
+let m_pisa = parseInt(prompt("Podaj wartość m (naturalna > 0):", "4"));
+
+    if (m_pisa > 0) {
+        let a = m_pisa + 1;
+        let b = m_pisa * (m_pisa + 1);
+
+        document.write("m = " + m_pisa + "<br>")
+        document.write("1/" + m_pisa + " = 1/" + a + " + 1/" + b);
+    } else {
+        document.write("Błąd: m musi być większe od 0");
+    }
+ </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_pisaski()"/>
+ </body>
+ </html>
+ </textarea>
+ </body>
+</html>

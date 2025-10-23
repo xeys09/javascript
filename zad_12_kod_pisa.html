@@ -1,0 +1,29 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+ <html>
+ <body>
+ <div style="color:green;font-size:50px;">
+ <script language="JavaScript">
+// pisarski 23.10.25
+// Zadanie 12cript>
+  var D1_pisa = parseInt(prompt("Podaj pierwszy dzień stycznia (D1_pisa):"));
+  var G1_pisa = parseInt(prompt("Podaj godzinę pierwszego dnia (G1_pisa):"));
+  var D2_pisa = parseInt(prompt("Podaj drugi dzień stycznia (D2_pisa):"));
+  var G2_pisa = parseInt(prompt("Podaj godzinę drugiego dnia (G2_pisa):"));
+
+  var sekundy = ((D1_pisa - D2_pisa) * 24 + (G1_pisa - G2_pisa)) * 3600;
+
+  document.write('<p style="color: green; font-size: 47px;">Ilość sekund = ' + sekundy + ' sekund</p>');
+ function okno_zamknij_pisarski()
+ {
+ window.close()
+ }
+ </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_pisarski()"/>
+ </body>
+ </html>
+ </textarea>
+ </body>
+</html>

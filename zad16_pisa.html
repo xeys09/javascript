@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Pisarski - Zadanie 16</title>
+</head>
+<body>
+<script>
+
+  let A = parseFloat(prompt("Podaj pierwszą liczbę (A):"));
+  let B = parseFloat(prompt("Podaj drugą liczbę (B):"));
+
+  let wynik = (A + B) ** 3;
+  let cz1 = A ** 3;
+  let cz2 = 3 * (A ** 2) * B;
+  let cz3 = 3 * A * (B ** 2);
+  let cz4 = B ** 3;
+
+  document.write("<p style='color:navy; font-size:24px;'>Wczytane liczby:</p>");
+  document.write("<p style='color:navy; font-size:22px;'>A = " + A + "<br>B = " + B + "</p>");
+  document.write("<hr>");
+  document.write("<p style='color:navy; font-size:22px; width:100%;'>");
+  document.write("(" + A + " + " + B + ")³ = " + A + "³ + 3×(" + A + "²)×(" + B + ") + 3×(" + A + ")×(" + B + "²) + " + B + "³<br><br>");
+  document.write("= " + cz1 + " + " + cz2 + " + " + cz3 + " + " + cz4 + " = " + wynik);
+  document.write("</p>");
+</script>
+</body>
+</html>

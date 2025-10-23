@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let m_pisa = parseInt(prompt("Podaj wartość m (naturalna > 0):", "4"));
+
+    if (m_pisa > 0) {
+        let a = m_pisa + 1;
+        let b = m_pisa * (m_pisa + 1);
+
+        document.write("m = " + m_pisa + "<br>")
+        document.write("1/" + m_pisa + " = 1/" + a + " + 1/" + b);
+    } else {
+        document.write("B³¹d: m musi byæ większe od 0");
+    }
+</script>
+</body>
+</html>
